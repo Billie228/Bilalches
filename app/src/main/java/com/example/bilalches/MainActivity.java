@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Cat cat1 = new Cat();
-        Log.i("numberOfLegs", "cat1 number of legs" + cat1.number0fLegs + Cat.whatCatsLike());
-
-
-        Lion lion = new Lion();
-        lion.talk();
+        Cat cat32 = new Cat(1, "Slavik");
+        cat32.talk();
+        Cat cat33 = new Cat(5, "Dimon");
+        cat33.talk();
+        Cat cat34 = new Cat(8, "Murad");
+        cat34.talk();
 
     }
 }
