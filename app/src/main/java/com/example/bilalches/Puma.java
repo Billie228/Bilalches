@@ -2,6 +2,8 @@ package com.example.bilalches;
 
 import android.util.Log;
 
+import android.util.Log;
+
 public class Puma extends Cat implements Movable, Printable {
     public void someMethod() {
         this.age = 3;
@@ -19,7 +21,7 @@ public class Puma extends Cat implements Movable, Printable {
 
     @Override
     public void move() {
-        Log.i("move()", "Move Puma");
+        Log.i("move()", "Move overriden Puma");
     }
 
     @Override

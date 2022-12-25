@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements Printable {
 
-
     Cat myCat;
     int z;
 
@@ -27,7 +26,12 @@ public class MainActivity extends AppCompatActivity implements Printable {
         printable.print();
         ((Puma) printable).move();
 
-        printAnyObject(new MainActivity());
+        Puma puma = new Puma();
+        Log.i("speedOfMoving", "" + puma.speedOfMoving);
+
+        Log.i("speedOfMoving", "" + ((Puma) printable).speedOfMoving);
+
+        Log.i("speedOfMoving", "" + Movable.speedOfMoving);
 
 
     }
@@ -44,5 +48,4 @@ public class MainActivity extends AppCompatActivity implements Printable {
     public void print() {
 
     }
-
 }
