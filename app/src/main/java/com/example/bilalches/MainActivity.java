@@ -14,14 +14,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        myCat = new Cat(4,"Puma","Yaz","gray");
+        myCat = new Cat(4, "Puma", "Yaz", "gray");
         myCat.talk();
 
-        Cat murzik = new Cat(2,"Murza","Karas","blue");
+        Cat murzik = new Cat(2, "Murza", "Karas", "blue");
         murzik.talk();
 
         Cat glasha = new Cat();
         glasha.age = 1;
         glasha.name = "Glasha";
+        glasha.breed = "Buba";
+        glasha.color = "black";
+        glasha.talk();
     }
 }
